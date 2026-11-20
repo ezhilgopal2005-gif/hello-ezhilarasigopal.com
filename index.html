@@ -232,6 +232,26 @@ a.j.lnkrow h3{color:#cfe0f5;text-decoration:underline;text-decoration-color:#4E8
 .tools .tc{display:flex;flex-wrap:wrap;gap:8px}
 .tools .tc span{font-size:14px;font-weight:500;border:1px solid hsl(var(--stroke));border-radius:999px;padding:8px 14px;background:hsl(var(--surface))}
 .tools .tc.learn span{border-style:dashed;color:hsl(var(--muted))}
+
+/* experience */
+.xp{display:flex;flex-direction:column;gap:16px}
+.xi{display:grid;grid-template-columns:1fr;gap:16px;border:1px solid hsl(var(--stroke));background:hsl(var(--surface)/.35);border-radius:24px;padding:26px}
+@media(min-width:768px){.xi{grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:40px;padding:32px}}
+.xi .when{display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.xi .tag{font-size:11px;letter-spacing:.15em;text-transform:uppercase;border:1px solid hsl(var(--stroke));border-radius:999px;padding:6px 12px;color:hsl(var(--muted))}
+.xi .tag.now{border-color:#4E85BF;color:#cfe0f5;background:rgba(78,133,191,.14)}
+.xi .co{font-size:28px;font-weight:500;line-height:1.15;letter-spacing:-.01em}
+.xi .co em{font-family:'Instrument Serif',serif;font-weight:400}
+.xi .ro{font-size:14px}
+.xi p{font-size:15px;line-height:1.65;max-width:62ch}
+.xi ul{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+.xi li{position:relative;padding-left:22px;font-size:14px;line-height:1.6;color:hsl(var(--muted))}
+.xi li::before{content:"";position:absolute;left:0;top:.72em;width:10px;height:1px;background:#4E85BF}
+@media(max-width:420px){.nl{padding:7px 7px;font-size:11.5px}.pill .logo{transform:scale(.9)}}
+.xi li b{color:hsl(var(--text));font-weight:500}
+.xi .pf{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}
+.xi .pf a{font-size:12px;border:1px solid #4E85BF;border-radius:999px;padding:6px 12px;color:#cfe0f5;text-decoration:none;background:rgba(78,133,191,.14);transition:background .2s}
+.xi .pf a:hover{background:rgba(78,133,191,.32)}
 </style>
 
 </head>
@@ -246,7 +266,7 @@ a.j.lnkrow h3{color:#cfe0f5;text-decoration:underline;text-decoration-color:#4E8
 <nav><div class="pill" id="pill">
   <a class="logo grad" href="#home" aria-label="Home"><span class="display">EG</span></a>
   <i class="div"></i>
-  <a class="nl on" href="#home">Home</a><a class="nl" href="#work">Brands</a><a class="nl" href="#journal">What I do</a><a class="nl" href="#uni">University</a>
+  <a class="nl on" href="#home">Home</a><a class="nl" href="#work">Brands</a><a class="nl" href="#experience">Experience</a><a class="nl" href="#journal">What I do</a><a class="nl" href="#uni">University</a>
   <i class="div"></i>
   <a class="ring" href="#contact"><span>Say hi ↗</span></a>
 </div></nav>
@@ -279,6 +299,29 @@ a.j.lnkrow h3{color:#cfe0f5;text-decoration:underline;text-decoration-color:#4E8
     <div class="card s5 rv" id="fpcard"><div class="bg" id="fpbg" style="background:url(media/40905fd6ca.jpg) center/cover"></div><div class="ht"></div><div class="cap" data-n="02" data-k="Healthcare"><b>Five Plus Hospitals</b><small>Healthcare · Posters, carousels, trend creatives &amp; reel cover</small></div><div class="ov"><div class="lab"><span>View posters — <em>Five Plus Hospitals</em></span></div></div></div>
     <div class="card s5 rv" id="rbcard"><div class="bg" id="rbbg" style="background:url(media/4038034a0b.jpg) center/cover"></div><div class="ht"></div><div class="cap" data-n="03" data-k="Retail"><b>Roshan Bags</b><small>Retail · Posters, trend creatives &amp; on-camera reels</small></div><div class="ov"><div class="lab"><span>View posters — <em>Roshan Bags</em></span></div></div></div><div class="card s7 rv" id="crcard"><div class="bg" style="background:url(media/4d5b669309.jpg) center/cover"></div><div class="ht"></div><div class="cap" data-n="04" data-k="Our own brand"><b>Creotodo</b><small>Our own brand · Brand strategy for Muster Perfume</small></div><div class="ov"><div class="lab"><span>View strategy — <em>Muster Perfume</em></span></div></div></div><div class="card s12 rv" id="krcard"><div class="bg" id="krbg" style="background:url(media/1eeeefdf43.jpg) center/cover"></div><div class="ht"></div><div class="cap" data-n="05" data-k="Clothing"><b>Krono</b><small>Clothing · Jersey &amp; occasion posts</small></div><div class="ov"><div class="lab"><span>View posters — <em>Krono</em></span></div></div></div>
     
+  </div>
+</div></section>
+
+<section class="pad" id="experience"><div class="wrap">
+  <div class="head rv"><div>
+    <div class="eb"><i></i><span class="eyebrow">Experience</span></div>
+    <h2>Where I’ve <em>worked</em></h2>
+    <p class="muted">From writing for a student-led creative studio to running social media for five brands.</p></div>
+    <a class="ring vall" href="#contact"><span>Hire me →</span></a></div>
+  <div class="xp">
+    <article class="xi rv">
+      <div class="when"><span class="tag now">Current</span><h3 class="co">Creotodo</h3><span class="ro muted">Social Media Manager &amp; Strategist</span></div>
+      <div><p class="muted">I run social media for five brands across healthcare, education, retail and fashion, from strategy and scripts to creatives, on-camera reels and monthly growth reports.</p>
+        <div class="pf"><a href="#work">Brands I manage</a><a href="#strategy">Strategy case studies</a></div></div>
+    </article>
+    <article class="xi rv">
+      <div class="when"><span class="tag">College internship</span><h3 class="co">Forward Media <em>Comms</em></h3><span class="ro muted">Content Writer</span></div>
+      <div><p class="muted">A talent-led creative studio started by my college faculty with a small team of students. I was part of the founding team, working as its content writer.</p>
+        <ul>
+          <li><b>Client work for Power 8 Nest:</b> wrote content for this Dubai-based company, an international client.</li>
+          <li><b>Company deck:</b> wrote and built Forward Media Comms’ own company deck, covering who we are, what we offer and how we work.</li>
+        </ul></div>
+    </article>
   </div>
 </div></section>
 
